@@ -4,10 +4,17 @@ function calculo() {
     personas = document.getElementById("personas").value;
     resultado = cuenta * servicio / personas;
 
-    if (document.getElementById("propina")) {
-        document.getElementById("propina").remove
+    if (cuenta = document.getElementById("cuenta").value <= 0) {
+
+    } else {
+        if (document.getElementById("propina")) {
+            document.getElementById("propina").remove()
+        }
+        var nuevoElemento = "<h2 id='propina'>Propina = " + resultado + " por persona</h2>";
+        var form = document.getElementById("formulario");
+        form.innerHTML = form.innerHTML + nuevoElemento;
     }
-    var nuevoElemento = "<h2 id='propina'>Propina = " + resultado + " por persona</h2>";
-    var form = document.getElementById("formulario");
-    form.innerHTML = form.innerHTML + nuevoElemento;
+
+
+
 }
